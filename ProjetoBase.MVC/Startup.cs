@@ -31,7 +31,7 @@ namespace ProjetoBase
 
             //recuperando str connection DbContext
             //string connectionString = Configuration.GetConnectionString("ProjetoBaseCoreDbContext");
-            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ProjetoBaseCore;Integrated Security=True;user id=Xapps; password=XappsDev;";
+            string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=ProjetoBaseCore;Integrated Security=True;user id=Teste; password=Teste;";
             services.AddDbContext<ProjetoBaseCoreDbContext>(optionBuilder =>
             {
                 optionBuilder.UseSqlServer(connectionString);
